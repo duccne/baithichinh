@@ -1,0 +1,10 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+body { background-color: #f0f2f5; padding: 20px; }
+.container { max-width: 1100px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 20px; color: #1a73e8; }
+.loading { text-align: center; font-weight: bold; color: #1a73e8; margin-top: 50px; }
+.error { text-align: center; color: red; background: #fff1f0; padding: 15px; border-radius: 8px; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.card { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.card h3 { color: #202124; margin-bottom: 10px; text-transform: capitalize; }
+.card p { color: #5f6368; line-height: 1.6; }
