@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f8fafc; /* Màu nền xám nhẹ dịu mắt */
+    background-color: #e2e8f0; /* Đổi màu nền tối hơn một chút để các card màu trắng nổi hẳn lên */
     color: #1e293b;
     padding: 40px 20px;
 }
@@ -19,25 +19,21 @@ body {
     margin: 0 auto;
 }
 
-/* Tiêu đề trang hoành tráng hơn */
+/* KHUNG TIÊU ĐỀ NỔI BẬT HƠN */
 h1 {
     text-align: center;
-    margin-bottom: 40px;
-    color: #0f172a;
-    font-size: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #ffffff, #f8fafc); /* Tạo nền khung màu trắng/bạc gradient nhẹ */
+    color: #1e3a8a; /* Màu chữ xanh đậm hoàng gia quyền lực */
+    font-size: 2.3rem;
     font-weight: 700;
-    letter-spacing: -0.05em;
-    position: relative;
-}
-
-h1::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: #2563eb; /* Vạch màu xanh hi-tech dưới tiêu đề */
-    margin: 12px auto 0;
-    border-radius: 2px;
+    letter-spacing: -0.03em;
+    border-radius: 16px; /* Bo góc khung tiêu đề */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Đổ bóng tạo độ nổi */
+    border: 2px solid #3b82f6; /* Viền khung màu xanh công nghệ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Hiệu ứng chữ nổi khối nhẹ */
 }
 
 /* Hiệu ứng vòng tròn xoay Loading CSS nâng cao */
@@ -54,7 +50,7 @@ h1::after {
     display: block;
     width: 40px;
     height: 40px;
-    border: 4px solid #e2e8f0;
+    border: 4px solid #cbd5e1;
     border-top: 4px solid #2563eb;
     border-radius: 50%;
     margin: 0 auto 15px;
@@ -86,13 +82,14 @@ h1::after {
     gap: 30px;
 }
 
-/* Thiết kế Card tin tức sang trọng */
+/* Thiết kế Card tin tức màu trắng tinh khôi tương phản với nền */
 .card {
-    background: #ffffff;
+    background: #ffffff; /* Giữ màu trắng tinh khôi */
     border-radius: 16px;
     padding: 28px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f1f5f9;
+    /* Đổ bóng sâu hơn một tí giúp tách biệt hẳn với lớp nền phía sau */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cbd5e1;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
@@ -103,8 +100,8 @@ h1::after {
 /* Hiệu ứng khi di chuột qua Card */
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    border-color: #e2e8f0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.15);
+    border-color: #94a3b8;
 }
 
 /* Thêm một tag nhỏ "Tin tức" phía trên tiêu đề */
@@ -134,7 +131,7 @@ h1::after {
 }
 
 .card:hover h3 {
-    color: #2563eb; /* Tiêu đề đổi màu xanh khi hover card */
+    color: #2563eb;
 }
 
 /* Nội dung bài viết */
